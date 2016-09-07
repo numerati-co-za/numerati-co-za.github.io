@@ -1,0 +1,316 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+
+* {
+	box-sizing: border-box;
+	font-family: 'Lato', Helvetica, sans-serif;
+	font-style: normal;
+	padding: 0;
+	margin: 0;
+}
+
+
+p {
+	font-size: 1.2em;
+}
+
+
+a {
+	color: RGB(242,242,242);
+	text-decoration: none;
+}
+
+footer{
+	padding: 1em 0;
+	text-align: center;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+
+.light-style{
+	background-color: rgb(242, 242, 242);
+	color: RGB(102,102,102);
+}
+
+.dark-style {
+	background-color: RGB(51,51,51);
+	color: RGB(242,242,242);
+}
+
+
+// // Header
+
+.logo {
+	vertical-align: middle;
+}
+
+.main-nav {
+	vertical-align: middle;
+}
+
+.main-nav a {
+	display: block;
+	text-align: center;
+	padding: 15px 15px;
+	font-size: 1em;
+	text-transform: uppercase;
+}
+
+.main-nav a:hover {
+	color: rgba(254,195,111,.7);
+}
+
+ul.main-nav li.icon {
+	display: none;
+}
+
+
+.scene {
+	height: 48em;
+	background-image: url("../img/tranquil_1280.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+.scene-layer {
+	background-color: rgba(51, 51, 51, 0.75);
+	width: 100%;
+	height: 100%
+}
+
+// Tagline
+
+// .headline-outer{
+// 	height: 300px;
+// }
+
+.headline-inner {
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	text-align: center;
+	font-size: 2em;
+}
+
+
+// Services
+
+#Services{
+	padding-top: 3em;
+	padding-bottom: 3em;
+}
+
+.service {
+	width: 20em;
+	height: 23em;
+	padding: 2em;
+	display: inline-block;
+	float: left;
+	vertical-align: top;
+	color: RGB(77,77,77);
+}
+
+.service-header {
+	text-align: center;
+	color: RGB(51,51,51);
+	height: 1.5em;
+}
+
+.icon-container {
+	color: rgba(254,195,111,.7);
+	text-align: center;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+
+.people {
+	padding: 3em 0;
+	text-align: center;
+	color: RGB(242,242,242);
+}
+
+.people-intro {
+	padding-bottom: 1em;
+}
+
+#sam-img {
+	height: 15em;
+	width: 15em;
+	float: left;
+	border-radius: 100%;
+	margin-right: 3em;
+	margin-bottom: 3em;
+}
+
+.about-sam {
+	width: 20em;
+	height: 40em;
+	text-align: left;
+	padding-bottom: 2em;
+}
+
+
+
+#LinkedIn {
+	text-align: center;
+}
+
+#Contact {
+
+	padding: 3em 0;
+}
+
+#Contact h2 {
+	text-align: center;
+	//color: RGB(51,51,51);
+}
+
+#Contact p {
+	text-align: center;
+	padding: 0.5em 0;
+}
+
+#Contact address {
+	//color: RGB(77,77,77);
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#Contact a {
+	color: RGB(102,102,102);
+}
+
+
+
+
+/* ---- Float clearfix ---- */
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+	line-height: 0px;
+}
+
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (max-height: 650px) {
+	.hide {
+		display: none;
+	}
+}
+
+
+.container {
+	margin: 0 auto;
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+
+@media only screen and (min-width : 240px) {
+
+	.container {
+		width: 98%;
+
+	}
+
+}
+
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+
+	.container {
+		width: 90%;
+	}
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+	.container {
+		width: 87.5%;
+	}
+
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	.container {
+		width: 85%;
+	}
+
+	.main-nav {
+		float: right;
+	}
+
+	.main-nav li {
+		display: inline-block;
+		margin-left: 15px;
+	}
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	.container {
+		width: 82.5%;
+	}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	.container {
+		width: 80%;
+		max-width: 1150px;
+	}
+}
+
+
+// Responsive Menu Items
+// http://www.w3schools.com/howto/howto_js_topnav.asp
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). 
+	Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:680px) {
+  ul.main-nav li {display: none;}
+  ul.main-nav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. 
+	This class makes the topnav look good on small screens */
+@media screen and (max-width:680px) {
+  
+  ul.main-nav.responsive {position: relative;}
+  
+  ul.main-nav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  ul.main-nav.responsive li {
+    float: none;
+    display: inline;
+  }
+  
+  ul.main-nav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
