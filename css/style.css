@@ -83,11 +83,11 @@ ul.main-nav li.icon {
 	height: 100%
 }
 
-// Tagline
 
-// .headline-outer{
-// 	height: 300px;
-// }
+.headline-style{
+	background-color: rgba(218,165,32,0.7);
+	color: RGB(242,242,242);
+}
 
 .headline-inner {
 	padding-top: 0.5em;
@@ -121,7 +121,7 @@ ul.main-nav li.icon {
 }
 
 .icon-container {
-	color: rgba(254,195,111,.7);
+	color: rgba(218,165,32,0.7); // rgba(254,195,111,.7);
 	text-align: center;
 	padding-top: 1em;
 	padding-bottom: 1em;
@@ -139,8 +139,8 @@ ul.main-nav li.icon {
 }
 
 #sam-img {
-	height: 15em;
-	width: 15em;
+	height: 17.5em;
+	width: 17.5em;
 	float: left;
 	border-radius: 100%;
 	margin-right: 3em;
@@ -154,6 +154,9 @@ ul.main-nav li.icon {
 	padding-bottom: 2em;
 }
 
+.about-sam p {
+	line-height: 125%;
+}
 
 
 #LinkedIn {
