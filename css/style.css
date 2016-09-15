@@ -206,11 +206,6 @@ ul.main-nav li.icon {
   Media Queries
 ==================================== */
 
-@media (max-height: 650px) {
-	.hide {
-		display: none;
-	}
-}
 
 
 .container {
@@ -225,7 +220,6 @@ ul.main-nav li.icon {
 
 	.container {
 		width: 98%;
-
 	}
 
 }
@@ -287,7 +281,8 @@ ul.main-nav li.icon {
 
 /* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). 
 	Show the list item that contains the link to open and close the topnav (li.icon) */
-@media screen and (max-width:680px) {
+
+@media only screen and (max-width:680px) {
   ul.main-nav li {display: none;}
   ul.main-nav li.icon {
     float: right;
@@ -297,23 +292,24 @@ ul.main-nav li.icon {
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. 
 	This class makes the topnav look good on small screens */
-@media screen and (max-width:680px) {
+
+// @media screen and (max-width:680px) {
   
-  ul.main-nav.responsive {position: relative;}
+//   ul.main-nav.responsive {position: relative;}
   
-  ul.main-nav.responsive li.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
+//   ul.main-nav.responsive li.icon {
+//     position: absolute;
+//     right: 0;
+//     top: 0;
+//   }
   
-  ul.main-nav.responsive li {
-    float: none;
-    display: inline;
-  }
+//   ul.main-nav.responsive li {
+//     float: none;
+//     display: inline;
+//   }
   
-  ul.main-nav.responsive li a {
-    display: block;
-    text-align: left;
-  }
-}
+//   ul.main-nav.responsive li a {
+//     display: block;
+//     text-align: left;
+//   }
+// }
