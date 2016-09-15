@@ -42,9 +42,6 @@ footer{
 	color: RGB(242,242,242);
 }
 
-
-// // Header
-
 .logo {
 	vertical-align: middle;
 }
@@ -52,6 +49,7 @@ footer{
 .main-nav {
 	vertical-align: middle;
 }
+
 
 .main-nav a {
 	display: block;
@@ -65,13 +63,18 @@ footer{
 	color: rgba(254,195,111,.7);
 }
 
-ul.main-nav li.icon {
+ul.main-nav li {
 	display: none;
+}
+
+ul.main-nav li.icon {
+	float: right;
+	display: inline-block;
 }
 
 
 .scene {
-	height: 48em;
+	height: 26em;
 	background-image: url("../img/tranquil_1280.jpg");
 	background-position: center;
 	background-size: cover;
@@ -82,6 +85,12 @@ ul.main-nav li.icon {
 	width: 100%;
 	height: 100%
 }
+
+
+#crossword {
+	width: 100%;
+}
+
 
 
 .headline-style{
@@ -209,20 +218,39 @@ ul.main-nav li.icon {
 
 
 .container {
+	width: 98%;
 	margin: 0 auto;
 }
 
 
-/*==========  Mobile First Method  ==========*/
 
 
-@media only screen and (min-width : 240px) {
-
-	.container {
-		width: 98%;
-	}
-
+ul.main-nav.responsive {
+	position: relative;
 }
+
+ul.main-nav.responsive li.icon {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+ul.main-nav.responsive li {
+	float: none;
+	display: inline;
+}
+
+ul.main-nav.responsive li a {
+	display: block;
+	text-align: left;
+}
+
+
+
+
+
+
+/*==========  Mobile First Method  ==========*/
 
 
 /* Custom, iPhone Retina */ 
@@ -232,7 +260,14 @@ ul.main-nav li.icon {
 		width: 90%;
 	}
 
+	.scene {
+		height: 30em;
+	}	
+
+
+
 }
+
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (min-width : 480px) {
@@ -240,6 +275,13 @@ ul.main-nav li.icon {
 		width: 87.5%;
 	}
 
+	#crossword {
+		width: 90%;
+	}
+
+	.scene {
+		height: 33em;
+	}	
 
 }
 
@@ -253,10 +295,24 @@ ul.main-nav li.icon {
 		float: right;
 	}
 
-	.main-nav li {
+	ul.main-nav li.icon {
+		display: none;
+	}
+
+
+	ul.main-nav li {
 		display: inline-block;
 		margin-left: 15px;
 	}
+
+	#crossword{
+		width: 85%
+	}
+
+	.scene {
+		height: 40em;
+	}	
+
 
 }
 
@@ -264,6 +320,15 @@ ul.main-nav li.icon {
 @media only screen and (min-width : 992px) {
 	.container {
 		width: 82.5%;
+	}
+
+	.scene {
+		height: 43em;
+	}
+
+
+	#crossword{
+		width:75%
 	}
 }
 
@@ -273,6 +338,15 @@ ul.main-nav li.icon {
 		width: 80%;
 		max-width: 1150px;
 	}
+
+	.scene {
+		height: 46em;
+	}
+
+	#crossword{
+		width:65%
+	}
+
 }
 
 
@@ -282,34 +356,17 @@ ul.main-nav li.icon {
 /* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). 
 	Show the list item that contains the link to open and close the topnav (li.icon) */
 
-@media only screen and (max-width:680px) {
-  ul.main-nav li {display: none;}
-  ul.main-nav li.icon {
-    float: right;
-    display: inline-block;
-  }
-}
+// @media only screen and (max-width:680px) {
+//   ul.main-nav li {display: none;}
+//   ul.main-nav li.icon {
+//     float: right;
+//     display: inline-block;
+//   }
+// }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. 
 	This class makes the topnav look good on small screens */
 
 // @media screen and (max-width:680px) {
   
-//   ul.main-nav.responsive {position: relative;}
-  
-//   ul.main-nav.responsive li.icon {
-//     position: absolute;
-//     right: 0;
-//     top: 0;
-//   }
-  
-//   ul.main-nav.responsive li {
-//     float: none;
-//     display: inline;
-//   }
-  
-//   ul.main-nav.responsive li a {
-//     display: block;
-//     text-align: left;
-//   }
 // }

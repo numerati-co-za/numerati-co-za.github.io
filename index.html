@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Numerati</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href='https://fonts.googleapis.com/css?family=Lato+Light' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css" type='text/css'>
 	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 
 	<script type="text/javascript">
-		/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+		/* Toggle between adding and removing the "responsive" class to main-nav when the user clicks on the icon */
 		function myFunction() {
 		    var x = document.getElementById("main-nav");
 		    if (x.className === "main-nav") {
+		    	console.log("hello");
 		        x.className += " responsive";
 		    } else {
 		        x.className = "main-nav";
@@ -26,7 +27,7 @@
 	<header class="dark-style">
 		<div class="container clearfix">
 			<img class="logo" src="img/Numerati-Logo-w150.png" alt="Numerati Logo">
-			<ul class="main-nav">
+			<ul id="main-nav" class="main-nav">
 				<li><a href="#Home">Home</a></li>
 				<li><a href="#Services">Services</a></li>
 				<li><a href="#People">People</a></li>
@@ -44,7 +45,7 @@
 			<div class="container">
 				<!-- TODO: figure out how to get this width/height applied in the css -->
 	
-				<img src="img/crossword-transparent.png" alt="Numerati Characteristics as Crossword" style="width:60%">
+				<img id="crossword" src="img/crossword-transparent.png" alt="Numerati Characteristics as Crossword">
 	
 				<!-- <div class="hide arrow bounce"></div> -->
 	
