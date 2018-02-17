@@ -78,13 +78,14 @@ ul.main-nav li.icon {
 	background-image: url("../img/tranquil_1280.jpg");
 	background-position: center;
 	background-size: cover;
-	background-color: rgba(51, 51, 51, 0.75);
+}
+
+/* this needs to be separate from scene as it is a transparency layer over */
+.scene-layer {
+	background-color: rgba(51, 51, 51, 0.60);
 	width: 100%;
 	height: 100%
 }
-
-/* .scene-layer {
-} */
 
 
 #crossword {
