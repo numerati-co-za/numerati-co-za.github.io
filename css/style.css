@@ -75,7 +75,7 @@ ul.main-nav li.icon {
 
 .scene {
 	height: 26em;
-	background-image: url("../img/tranquil_1280.jpg");
+	background-image: url("../img/tranquil_1280_mini.jpg");
 	background-position: center;
 	background-size: cover;
 }
@@ -128,7 +128,7 @@ ul.main-nav li.icon {
 }
 
 .icon-container {
-	color: rgba(218,165,32,0.7); // rgba(254,195,111,.7);
+	color: rgba(218,165,32,0.7);
 	text-align: center;
 	padding-top: 1em;
 	padding-bottom: 1em;
@@ -261,7 +261,8 @@ ul.main-nav.responsive li a {
 	}
 	.scene {
 		height: 30em;
-	}	
+		/* background-image: url("../img/tranquil_640.jpg"); */
+	}
 }
 
 
@@ -275,6 +276,7 @@ ul.main-nav.responsive li a {
 	}
 	.scene {
 		height: 33em;
+		/* background-image: url("../img/tranquil_640.jpg"); */
 	}	
 }
 
