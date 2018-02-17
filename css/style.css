@@ -78,13 +78,13 @@ ul.main-nav li.icon {
 	background-image: url("../img/tranquil_1280.jpg");
 	background-position: center;
 	background-size: cover;
-}
-
-.scene-layer {
 	background-color: rgba(51, 51, 51, 0.75);
 	width: 100%;
 	height: 100%
 }
+
+/* .scene-layer {
+} */
 
 
 #crossword {
@@ -255,17 +255,12 @@ ul.main-nav.responsive li a {
 
 /* Custom, iPhone Retina */ 
 @media only screen and (min-width : 320px) {
-
 	.container {
 		width: 90%;
 	}
-
 	.scene {
 		height: 30em;
 	}	
-
-
-
 }
 
 
@@ -274,15 +269,12 @@ ul.main-nav.responsive li a {
 	.container {
 		width: 87.5%;
 	}
-
 	#crossword {
 		width: 90%;
 	}
-
 	.scene {
 		height: 33em;
 	}	
-
 }
 
 /* Small Devices, Tablets */
@@ -290,61 +282,47 @@ ul.main-nav.responsive li a {
 	.container {
 		width: 85%;
 	}
-
 	.main-nav {
 		float: right;
 	}
-
 	ul.main-nav li.icon {
 		display: none;
 	}
-
-
 	ul.main-nav li {
 		display: inline-block;
 		margin-left: 15px;
 	}
-
 	#crossword{
 		width: 85%
 	}
-
 	.scene {
 		height: 40em;
 	}	
-
-
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
+@media only screen and (min-width: 992px) {
 	.container {
 		width: 82.5%;
 	}
-
 	.scene {
 		height: 43em;
 	}
-
-
 	#crossword{
 		width:75%
 	}
 }
 
 /* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
+@media only screen and (min-width: 1200px) {
 	.container {
 		width: 80%;
 		max-width: 1150px;
 	}
-
 	.scene {
 		height: 46em;
 	}
-
 	#crossword{
 		width:65%
 	}
-
 }
