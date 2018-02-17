@@ -93,7 +93,6 @@ ul.main-nav li.icon {
 	font-size: 2em;
 }
 
-
  /* Services */
 
 #Services{
@@ -103,8 +102,8 @@ ul.main-nav li.icon {
 
 .service {
 	width: 20em;
-	height: 23em;
-	padding: 2em;
+	height: 21em;
+	padding: 1em;
 	display: inline-block;
 	float: left;
 	vertical-align: top;
@@ -138,36 +137,34 @@ ul.main-nav li.icon {
 #sam-img {
 	height: 17.5em;
 	width: 17.5em;
-	float: left;
+	/* float: left; */
 	border-radius: 100%;
 	margin-right: 3em;
 	margin-bottom: 3em;
 }
 
 .about-sam {
-	width: 20em;
-	height: 40em;
+	/* width: 25em; */
+	/* height: 40em; */
 	text-align: left;
 	padding-bottom: 2em;
+	/* float: left; */
 }
 
 .about-sam p {
 	line-height: 125%;
 }
 
-
 #LinkedIn {
 	text-align: center;
 }
 
 #Contact {
-
 	padding: 3em 0;
 }
 
 #Contact h2 {
 	text-align: center;
-	//color: RGB(51,51,51);
 }
 
 #Contact p {
