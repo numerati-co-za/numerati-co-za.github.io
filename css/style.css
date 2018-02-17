@@ -87,12 +87,9 @@ ul.main-nav li.icon {
 	height: 100%
 }
 
-
 #crossword {
 	width: 100%;
 }
-
-
 
 .headline-style{
 	background-color: rgba(218,165,32,0.7);
@@ -195,9 +192,12 @@ ul.main-nav li.icon {
 }
 
 #Contact a {
-	color: RGB(102,102,102);
+	color: rgb(97, 185, 219);
 }
 
+#Contact a:hover {
+	text-decoration: underline;
+}
 
 
 
