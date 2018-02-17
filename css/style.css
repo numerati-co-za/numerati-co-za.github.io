@@ -106,7 +106,7 @@ ul.main-nav li.icon {
 }
 
 
-// Services
+ /* Services */
 
 #Services{
 	padding-top: 3em;
@@ -188,7 +188,7 @@ ul.main-nav li.icon {
 }
 
 #Contact address {
-	//color: RGB(77,77,77);
+	color: RGB(77,77,77);
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
